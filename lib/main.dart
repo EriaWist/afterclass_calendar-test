@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
           // Center is a layout widget. It takes a single child and positions it
           // in the middle of the parent.
-          child: List1()),
+          child: list2()),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
@@ -90,20 +90,30 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 class list2 extends StatefulWidget {
+  
   @override
   _list2State createState() => _list2State();
 }
 
 class _list2State extends State<list2> {
+  
+  void setst()
+  {
+    setState(() {
+      
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Container(
-      
+      child:ListView(
+        children: list,
+      ),
     );
   }
 }
-class List1 extends StatelessWidget {
-  List<Widget> list = <Widget>[
+
+List<Widget> list = <Widget>[
     ListTile(
       
       title: Row(
@@ -115,7 +125,10 @@ class List1 extends StatelessWidget {
     FlatButton(child: Image.network(
                 'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
                 width: 130,
-                )
+                ),
+                onPressed: (){
+                     
+                },
               ),
               Text("data")
             ],
@@ -196,12 +209,3 @@ class List1 extends StatelessWidget {
     ),
 
   ];
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: ListView(
-        children: list,
-      ),
-    );
-  }
-}
