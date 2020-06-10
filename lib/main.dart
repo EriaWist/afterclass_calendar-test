@@ -6,6 +6,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -89,123 +90,52 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 class list2 extends StatefulWidget {
-  
   @override
   _list2State createState() => _list2State();
 }
 
 class _list2State extends State<list2> {
-  
-  void setst()
-  {
-    setState(() {
-      
-    });
-  }
   @override
   Widget build(BuildContext context) {
+    list.add(aasd);
+    list.add(aasd);
     return Container(
-      child:ListView(
+      child: ListView(
         children: list,
       ),
     );
   }
 }
 
-List<Widget> list = <Widget>[
-    ListTile(
-      
-      title: Row(
-        mainAxisAlignment:MainAxisAlignment.center,
+var aasd = ListTile(
+  title: Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: <Widget>[
+      Column(
         children: <Widget>[
-          Column(
-            children: <Widget>[
-              
-    FlatButton(child: Image.network(
-                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
-                width: 130,
-                ),
-                onPressed: (){
-                     
-                },
-              ),
-              Text("data")
-            ],
+          FlatButton(
+            child: Image.asset(
+              'images/unnamed.jpg',
+              width: 130,
+            ),
+            onPressed: () {},
           ),
-          Column(
-            children: <Widget>[
-              FlatButton(child: Image.network(
-                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
-                
-                width: 130,
-                )
-              ),
-              Text("data")
-            ],
-          ),
+          Text("data")
         ],
       ),
-    ),
-        ListTile(
-      
-      title: Row(
-        mainAxisAlignment:MainAxisAlignment.center,
+      Column(
         children: <Widget>[
-          Column(
-            children: <Widget>[
-              
-    FlatButton(child: Image.network(
-                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
-                width: 130,
-                )
-              ),
-              Text("data")
-            ],
-          ),
-          Column(
-            children: <Widget>[
-              FlatButton(child: Image.network(
-                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
-                
-                width: 130,
-                )
-              ),
-              Text("data")
-            ],
-          ),
+          FlatButton(
+              child: Image.asset(
+            'images/unnamed.jpg',
+            width: 130,
+          )),
+          Text("data")
         ],
       ),
-    ),
-    ListTile(
-      
-      title: Row(
-        mainAxisAlignment:MainAxisAlignment.center,
-        children: <Widget>[
-          Column(
-            children: <Widget>[
-              
-    FlatButton(child: Image.network(
-                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
-                width: 130,
-                )
-              ),
-              Text("data")
-            ],
-          ),
-          Column(
-            children: <Widget>[
-              FlatButton(child: Image.network(
-                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
-                
-                width: 130,
-                )
-              ),
-              Text("data")
-            ],
-          ),
-        ],
-      ),
-    ),
-
-  ];
+    ],
+  ),
+);
+List<Widget> list = <Widget>[];
