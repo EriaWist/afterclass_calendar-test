@@ -89,48 +89,112 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+class list2 extends StatefulWidget {
+  @override
+  _list2State createState() => _list2State();
+}
 
+class _list2State extends State<list2> {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
+    );
+  }
+}
 class List1 extends StatelessWidget {
   List<Widget> list = <Widget>[
     ListTile(
+      
       title: Row(
+        mainAxisAlignment:MainAxisAlignment.center,
         children: <Widget>[
-          OutlineButton(),
-          Text(
-            '測試標題一',
-            style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20.0),
+          Column(
+            children: <Widget>[
+              
+    FlatButton(child: Image.network(
+                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
+                width: 130,
+                )
+              ),
+              Text("data")
+            ],
           ),
-          Text("data")
+          Column(
+            children: <Widget>[
+              FlatButton(child: Image.network(
+                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
+                
+                width: 130,
+                )
+              ),
+              Text("data")
+            ],
+          ),
         ],
       ),
-      subtitle: Text('測試內容一'),
-      leading: Icon(
-        Icons.event_seat,
-        color: Colors.blue,
+    ),
+        ListTile(
+      
+      title: Row(
+        mainAxisAlignment:MainAxisAlignment.center,
+        children: <Widget>[
+          Column(
+            children: <Widget>[
+              
+    FlatButton(child: Image.network(
+                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
+                width: 130,
+                )
+              ),
+              Text("data")
+            ],
+          ),
+          Column(
+            children: <Widget>[
+              FlatButton(child: Image.network(
+                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
+                
+                width: 130,
+                )
+              ),
+              Text("data")
+            ],
+          ),
+        ],
       ),
     ),
     ListTile(
-      title: Text(
-        '測試標題二',
-        style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20.0),
-      ),
-      subtitle: Text('測試內容二'),
-      leading: Icon(
-        Icons.event_seat,
-        color: Colors.blue,
+      
+      title: Row(
+        mainAxisAlignment:MainAxisAlignment.center,
+        children: <Widget>[
+          Column(
+            children: <Widget>[
+              
+    FlatButton(child: Image.network(
+                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
+                width: 130,
+                )
+              ),
+              Text("data")
+            ],
+          ),
+          Column(
+            children: <Widget>[
+              FlatButton(child: Image.network(
+                'https://lh3.googleusercontent.com/proxy/T37MA66F5hSWlAUTVIXWxWmti-VLHCPHY2-8aRIEKjDUF2zz1iJq0FAgG81V2qQ7enHqAtBZV2_WwI4tIDQwAwjx-Ui2vtOInV8O6uBkCdFHmZFV',
+                
+                width: 130,
+                )
+              ),
+              Text("data")
+            ],
+          ),
+        ],
       ),
     ),
-    ListTile(
-      title: Text(
-        '測試標題三',
-        style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20.0),
-      ),
-      subtitle: Text('測試內容三'),
-      leading: Icon(
-        Icons.event_seat,
-        color: Colors.blue,
-      ),
-    ),
+
   ];
   @override
   Widget build(BuildContext context) {
